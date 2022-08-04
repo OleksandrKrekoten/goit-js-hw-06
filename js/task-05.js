@@ -5,5 +5,8 @@ const refs = {
 
 refs.inputName.addEventListener('input', (event) => {
     refs.userName.textContent = event.currentTarget.value
+    if (event.currentTarget.value === "") {
+        refs.userName.textContent = 'Anonymous'
+    }
 })
 
